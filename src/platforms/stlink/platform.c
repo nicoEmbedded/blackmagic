@@ -48,7 +48,7 @@ void platform_init(void)
 	SCS_DEMCR |= SCS_DEMCR_VC_MON_EN;
 	rcc_clock_setup_pll(&rcc_hse_configs[RCC_CLOCK_HSE8_72MHZ]);
 #ifdef BLUEPILL
-	led_idle_run = GPIO13;
+	led_idle_run = GPIO2;
 	nrst_pin = NRST_PIN_V1;
 #else
 	if (rev == 0) {

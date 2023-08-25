@@ -59,7 +59,7 @@ extern bool debug_bmp;
 #define NRST_PIN_V2 GPIO0
 
 #ifdef BLUEPILL
-#define LED_PORT GPIOC
+#define LED_PORT GPIOB
 #else
 #define LED_PORT GPIOA
 #endif
